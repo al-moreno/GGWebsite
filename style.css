@@ -248,102 +248,28 @@ html {
     color: rgba(42, 219, 175, 0.792);
 }
 
-
-/* _________ */
-
-/* projects section styling */
-/* .projects .title::after{
-    content: "what i've done";
-}
-.projects .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.projects .carousel .card:hover{
-    background: var(--crimson);
-}
-.projects .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.projects .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.projects .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.projects .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid var(--crimson);
-    transition: all 0.3s ease;
-}
-.projects .carousel .card:hover img{
-    border-color: var(--white);
+.qr-code{
+    width: 5em;
+    padding-right: 1em;
 }
 
-[data-action] {
-    color: var(--white);
-    position: relative;
-   
-}
 
-[data-action]:hover::after{
-    position: absolute;
-    content: attr(data-action);
-    Width: 200px;
-    color: var(--white);
-    background-color: var(--crimson);
-    bottom: 70px;
-    border: 1px solid var(--white);
-    border-radius: 10px;
-    font-size: 80%;
-   
+h2{
+    color:var(--purple)
 }
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid var(--crimson)!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: var(--crimson)!important;
-} */
-
-/* contact section styling */
-/* .contact .title::after{
-    content: "get in touch";
-} */
-
 
 /* project section */
+.project-heading{
+    color:var(--white);
+    text-align: center;
+    padding: 1em 0;
+
+}
 .projects {
     padding-top: 30px;
     background-color: var(--blue);
     min-height: 300px;
+    padding-bottom: 4em;
 }
 
 .projects .card-group {
@@ -500,6 +426,12 @@ footer span a:hover {
     text-decoration: underline;
 }
 
+
+/* Thank you section */
+.thank-you{
+    margin-top: 380px;
+    margin-bottom: 100px;
+}
 /* _________ */
 /* responsive media query start */
 @media(max-width: 1040px) {
@@ -566,6 +498,9 @@ footer span a:hover {
         margin-top: 55px;
         margin-left: 100px;
     }
+    body > section > nav > div > div.menu-btn > i{
+        margin-left: 165px;
+    }
 
 }
 
@@ -573,7 +508,9 @@ footer span a:hover {
     .max-width {
         padding: 0 15px;
     }
-
+    body > section > nav > div > div.menu-btn > i{
+        margin-left: 165px;
+    }
 
     .home .home-content .text-2 {
         font-size: 1.5em;
@@ -610,6 +547,10 @@ footer span a:hover {
 
     .carousel-inner .carousel-item>div:first-child {
         display: block;
+    }
+    .thank-you{
+        margin-top: 330px;
+        margin-bottom: 140px;
     }
 
 }
@@ -664,5 +605,16 @@ footer span a:hover {
     .projects {
         min-height: 250px;
     }
+    .thank-you{
+        margin-top: 220px;
+        margin-bottom: 150px;
+    }
+  
 
+}
+
+
+@media(max-width: 500px) {
+.text-1{
+    margin-top: 250px;
 }
